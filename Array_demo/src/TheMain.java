@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * This is for a lecture I presented
+ * This is for a lecture I presented.
  * @author Harry Kim
  *
  */
