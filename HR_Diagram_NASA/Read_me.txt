@@ -7,13 +7,13 @@ absolute magnitudes and luminosity vs the spectrum and temperature (Stefan-Boltz
 
 to run and test the program:
 
-open HR_Diagram.jar
-hit [Upload Data] Button
-find the "stardata.txt" file in the data folder of project
-hit [ok]
-watch the program populate
+1. open HR_Diagram.jar
+2. hit [Upload Data] Button
+3. find the "stardata.txt" file in the [data] folder of project.
+		(a hyperlinkk of the source is in the program)
+4. hit [ok] and watch the program populate with data.
 
-feel free to select any amount of stars.
+feel free to select any amount of stars on table on the right.
 
 (future possible changes)  store information into a database,
 and compare the v-magnitude and v-apparent and toggle both to see a comparison 
