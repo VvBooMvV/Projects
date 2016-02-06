@@ -1,0 +1,19 @@
+How to install the "Smithsonian Arcadia.apk" file on an Android Tablet.  NOTE: it has only been tested on a Nexus7 - First Generation Device, so the resolution size of your tablet should be 800x1280 pixels.  Streching, skewwing, and certain buttons may not show up on the screen, if the resolution is not correct (haven't tested game on other devices, and everything on the game is positioned on a fixed value).
+
+Installation Steps:
+
+1. Install a file exploring application for your android device from the google play store.  (I recommend "File Manager from ZenUI, Asus Computer).
+
+2a. If "Developer Option" is on, you make skip this step.  Go to Android device settings [Settings > About > Then tap "Build Number" seven times] go back to [Settings > "{} Developer Options" > enable USB debugging].
+
+2b. Go to the android device settings and go to: [Settings > Security > Enable: "Unknown sources"].  Warning: be sure not to run, download, or install anything else while this is enabled for security reasons, unless you know what you are doing.
+
+3. connect your tablet to your pc, and wait for windows explorer to show up.  Once you are on the device, simply copy the "Smithsonian Arcadia.apk" file into any folder you like (just remember where it is).
+
+4.  open the File Manager App and find the copied apk file, and tap and install the application.
+
+5. go back to the android settings [Settings > security > Disable: Unknown Sources].
+
+6. find the app "ShutterBug Arcadia", run, and enjoy!
+
+Any questions, feel free to email me: HarryKim4287@gmail.com
