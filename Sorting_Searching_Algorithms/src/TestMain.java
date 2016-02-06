@@ -22,6 +22,8 @@ public class TestMain {
 		//TODO build merge sort
 		//TODO build Heap Sort
 		//TODO modify for list versions
+		//TODO build finding prime numbers
+		//TODO backtracking algorithm
 		
 		for (int i = 0; i < test.length; i++){
 			System.out.println(test[i]);
