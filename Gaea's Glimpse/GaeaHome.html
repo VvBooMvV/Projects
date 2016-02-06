@@ -1,0 +1,226 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gaea's Glimpse</title>
+
+    <script type="text/javascript">
+        var questionList = ["Size: ", "Animal type: ", "Habitat: ", "Location: "];
+        var choiceList = [["large (think kangaroo)", "medium (think turtle)", "small (think ladybug)"], ["mammal", "bird", "amphibian"], ["riverbank", "pond", "beach"], ["land", "shore", "sea"]];
+        var buttonTemplate = "<button type='button' class='question' onclick='nextq()'>lorem</button>";
+        function nextq() {
+            if (questionList.length == 0 || choiceList.length == 0) {
+                form = document.createElement('form');
+                form.setAttribute('method', 'POST');
+                form.setAttribute('action', 'search.jsp');
+                myvar = document.createElement('input');
+                myvar.setAttribute('name', 'tags');
+                myvar.setAttribute('type', 'search');
+                myvar.setAttribute('value', 'wet');
+                form.appendChild(myvar);
+                document.body.appendChild(form);
+                form.submit();
+            }
+            else {
+                var q = questionList.pop();
+                var choices = choiceList.pop();
+                var choice1 = choices.pop();
+                var choice2 = choices.pop();
+                var choice3 = choices.pop();
+                var button1 = buttonTemplate.replace("lorem", choice1);
+                var button2 = buttonTemplate.replace("lorem", choice2);
+                var button3 = buttonTemplate.replace("lorem", choice3);
+                document.getElementById("buttons").innerHTML = "<h2>" + q + "</h2><form>" + button1 + button2 + button3 + "</form>";
+            }
+        }
+    </script>
+
+
+<style type = "text/css">
+
+    @import url("navigation.css");
+
+    /*search button format*/
+    #submit
+    {
+        background-color: #6cbb6b;
+        background-image: linear-gradient(#95d788, #6cbb6b);
+        border-radius: 5px 5px 5px 5px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #7eba7c #578e57 #447d43;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3),
+                    0 1px 0 rgba(255, 255, 255, 0.3) inset;
+        height: 48px;
+        margin: 0 0 0 10px;
+        padding: -10;
+        width: 90px;
+        cursor: pointer;
+        font: bold 14px sans-serif, arial;
+        color: #23441e;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    }
+
+    /*beginning of search button format*/
+    #submit:hover {
+        background-color: #95d788;
+        background-image: linear-gradient(#6cbb6b, #95d788);
+    }
+
+    #submit:active {
+        background: #95d788;
+        outline: none;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    }
+
+    #submit::-moz-focus-inner {
+           border: 0;  /* Small centering fix for Firefox */
+    }
+    /*end of search button format*/
+
+    .container-1 input#search{
+      width: 400px;
+      height: 50px;
+      background: #2b303b;
+      border: none;
+      font-size: 10pt;
+      float: center;
+      color: #63717f;
+      padding-left: 25px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+    /*bottom panel format*/
+    #panel{
+
+    	background-color: 333333;
+    	color: white;
+    	margin: 50px;
+    	height: 500px;
+    	border-radius: 8px 8px 8px 8px;
+    	}
+
+
+
+
+
+div h1{
+    text-align: center;
+    font-size: 38pt;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+form{
+    text-align: center;
+}
+
+
+button.question{
+    height: 150px;
+    width: 150px;
+    background-color: #447d43;
+    color: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 24pt;
+    text-align: center;
+}
+
+</style>
+
+<script>
+
+
+
+function resultPanel(){
+
+    var output = "<div id='results' > ";
+    var bool = false;
+
+    for(var i = 1; i < 11; i++){
+
+      var  speciesLink = "www.google.com"; //change for each link here
+      var  hyperlinkText = "CREATURE NAME"; //change the hyperlink text here
+      var sumaryText = "   small summary of search word here. there be all kinds of stuff here. thdsjfksad dsaf jlkdsjf lkasdjkafsd jadflskj skla fdsdj flsdj fadkjasdlf jdsakldsaf jadslkfja fkldsj flkdfsjfalsk djdsalkf adflskj dsfklja sdfklajf lkdsfj alsdk adfslkj dsafldsafl";  //summary text needs to be changed
+      var imageText = "frog.jpg";  //file namel; ideal image size: height= 400px, width=500px
+
+
+
+      output += "<div id='panel" + i + "'style = 'background-color: 333333;   color: white; margin: 5px; margin-left: 40px;height: 150px; width: 1000px; border-radius: 8px 8px 8px 8px; float: left; word-wrap: break-word;'> <br><div id='thumbnail" +i+ "'style='background-color: black;        margin: -2px 10px 0px 10px;      height: 120px;      width: 150px; float: left;'> <img src='"+ imageText +"' style='height: 120px; width:150px;'href='"+  speciesLink+"'/></div> <div id = 'thumbText" + i +"'  style='font-size: 16'>      <a href = '" + speciesLink + "'>" +hyperlinkText+ " </a> <br>" + sumaryText+ "   </div> </div>";
+
+    }
+
+    document.getElementById("outerpanel").innerHTML = output + "</div>";
+
+}
+</script>
+<!-- top navigation bar -->
+<ul>
+  <li><a class="active" href="GaeaHome.html"><div id="home"><img src = home.png></div></a></li>
+  <li><a href="forum.html#Under_Construction"> Forum </a></li>
+  <li><a href="Aware.html#Under_Construction"> Aware </a></li>
+  <li><a href="AboutUs.html"> About </a></li>
+  <li id="login"><a href="http://gaeasglimpse.mybluemix.net"> Login</a></li>
+
+</ul>
+
+</head>
+
+<body>
+
+
+<!-- search bar -->
+<br><br><br><br><br><br><br><br><br><br>
+<center><div class="box">
+  <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Search..." />
+
+       <input id="submit" type="submit" value="Search" onClick="window.location.href='SearchResult.html'">
+
+  </div>
+</div>
+</center>
+<br><br><br><br><br><br>
+
+
+<!-- bottom selection panel -->
+<!-- <div class=Container id="panel">
+  <font size = "6"><br><center>Category Search (ALPHA)</center></font><br><br>
+  <div id="category"> -->
+
+<div class=Container id="panel">
+    <div id="category">
+        <h1><br>Category Search Alpha</h1><br>
+        <div id='buttons'>
+            <h2><center>Continent:</center></h2>
+            <form>
+                <button type="button" class="question" onclick="nextq()">Asia</button>
+                <button type="button" class="question" onclick="nextq()">Africa</button>
+                <button type="button" class="question" onclick="nextq()">North America</button>
+                <button type="button" class="question" onclick="nextq()">South America</button>
+                <button type="button" class="question" onclick="nextq()">Europe</button>
+                <button type="button" class="question" onclick="nextq()">Australia</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--     </div>
+  </div> -->
+<!-- </div> -->
+
+
+</body>
+
+
+</html>

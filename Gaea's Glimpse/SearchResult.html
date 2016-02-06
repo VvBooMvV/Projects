@@ -1,0 +1,73 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gaea's Glimpse</title>
+
+
+
+<style type = "text/css">
+
+
+    @import url("navigation.css");
+
+
+</style>
+
+<script type="text/javascript">
+
+
+
+function resultPanel(){
+
+    var output = "<div id='results' > ";
+
+
+    for(var i = 1; i < 11; i++){
+
+      var  speciesLink = "SpeciesPage.html"; //change for each link here
+      var  hyperlinkText = "CREATURE NAME"; //change the hyperlink text here
+      var sumaryText = "   small summary of search word here. there be all kinds of stuff here. thdsjfksad dsaf jlkdsjf lkasdjkafsd jadflskj skla fdsdj flsdj fadkjasdlf jdsakldsaf jadslkfja fkldsj flkdfsjfalsk djdsalkf adflskj dsfklja sdfklajf lkdsfj alsdk adfslkj dsafldsafl";  //summary text needs to be changed
+      var imageText = "frog.jpg";  //file namel; ideal image size: height= 400px, width=500px
+
+
+
+      output += "<div id='panel" + i + "'style = 'background-color: 333333; color: white; margin: 5px; margin-left: 40px;height: 150px; width: 1000px; border-radius: 8px 8px 8px 8px; float: left; word-wrap: break-word;'> <br><div id='thumbnail" +i+ "'style='background-color: black;        margin: -2px 10px 0px 10px;      height: 120px;      width: 150px; float: left;'> <img src='"+ imageText +"' style='height: 120px; width:150px;'href='"+  speciesLink + "'/></div> <div id = 'thumbText" + i +"'  style='font-size: 16'>      <a href = '" + speciesLink + "'>" +hyperlinkText+ " </a> <br>" + sumaryText+ "   </div> </div>";
+
+    }
+
+    document.getElementById("outerpanel").innerHTML = output + "</div>";
+
+}
+
+</script>
+<!-- top navigation bar -->
+<ul>
+  <li><a class="active" href="GaeaHome.html"><div id="home"><img src = home.png></div></a></li>
+  <li><a href="forum.html#Under_Construction"> Forum </a></li>
+  <li><a href="Aware.html#Under_Construction"> Aware </a></li>
+  <li><a href="AboutUs.html"> About </a></li>
+  <li id="login"><a href="http://gaeasglimpse.mybluemix.net"> Login</a></li>
+
+</ul>
+
+</head>
+
+
+
+<body onLoad = "resultPanel()">  <!--calls the functions in javascript on load-->
+
+
+
+<div id="resText"style = 'background-color: 333333; color: white; margin: 20px; margin-left: 40px;height: 80px; width: 1000px; border-radius: 8px 8px 8px 8px; float: left; word-wrap: break-word;'> <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Results</h1></div>
+
+
+<div id= "outerpanel">
+
+    <!-- in javascript -->
+</div>
+
+</body>
+
+
+</html>

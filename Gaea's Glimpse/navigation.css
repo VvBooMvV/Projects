@@ -1,0 +1,64 @@
+
+    /*body*/
+    body
+    {
+
+        background: url(mainBack.png) no-repeat left top;
+        background-size: 100%;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        top: 0;
+        left: 0;
+        overflow-x:hidden;
+        font-family: sans-serif;
+        background-color: #B1DD7B;
+    }
+
+
+    /*overall navigation bar*/
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        margin: -10;
+        padding: 0;
+        overflow-y: hidden;
+        background-color: #333;
+        top: 0;
+        left: 0;
+    }
+
+    /*button positions*/
+    li {
+        float: left;
+        font-size: 26;
+      }
+
+    /*button links format*/
+    li a {
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /*hover color*/
+    a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    /*login button*/
+    #login{
+
+    	float: right;
+
+    }
+
+    /*color change navigation buttons when clicked*/
+    .active {
+    background-color:#4CAF50;
+    }
+    /*end of navigation format*/
+
+

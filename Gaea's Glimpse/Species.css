@@ -1,0 +1,139 @@
+    #pan{
+
+    	background-color: 333333;
+    	width: 1000px;
+    	margin: 40px;
+    	border-radius: 5px 5px 5px 5px;
+    	float:left;
+
+    }
+
+    #photoPan{
+
+    	background-color: 111111;
+    	width: 420px;
+    	height: 320px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float:left;
+
+    }
+    #mapPan{
+
+    	background-color: 111111;
+    	width: 550px;
+    	height: 320px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+    }
+
+    #sumShell{
+
+    	background-color: 111111;
+    	width: 980px;
+    	height: 320px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+
+    }
+
+
+    #summaryPan{
+
+    	background-color: EEEEEE;
+    	width: 960px;
+    	height: 300px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+    }
+
+    #Shell{
+
+    	background-color: 111111;
+    	width: 980px;
+    	height: 320px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+
+    }
+
+
+    #forumPan{
+
+    	background-color: EEEEEE;
+    	width: 470px;
+    	height: 300px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+    }
+
+    #votePan{
+
+    	background-color: EEEEEE;
+    	width: 470px;
+    	height: 300px;
+    	margin-left: 20px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+		color: FFFFFF;
+		word-wrap: break-word;
+    }
+
+
+    #forumBubble{
+
+    	background-color: 333333;
+    	width: 450px;
+    	height: 50px;
+    	margin-left: 10px;
+    	margin-top: 5px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+		color: FFFFFF;
+    }
+
+    #DesShell{
+
+    	background-color: 111111;
+    	width: 980px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+
+    }
+
+    #DescriptionPan{
+       	background-color: EEEEEE;
+    	width: 960px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+
+	}
+
+	#refShell{
+
+    	background-color: 111111;
+    	width: 980px;
+    	margin-left: 10px;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+
+    }
