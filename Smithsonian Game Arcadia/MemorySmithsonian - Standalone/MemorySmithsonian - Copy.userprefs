@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Board\SinglePlayer\Norm23\TouchInputNm33.cs">
+    <Files>
+      <File FileName="Assets\Board\SinglePlayer\Norm22\TouchInputNm22.cs" Line="64" Column="27" />
+      <File FileName="Assets\Board\SinglePlayer\Countdown Scripts\TouchInputFC.cs" Line="64" Column="26" />
+      <File FileName="Assets\Board\SinglePlayer\TouchInput.cs" Line="45" Column="26" />
+      <File FileName="Assets\Board\SinglePlayer\TouchInputNm.cs" Line="64" Column="27" />
+      <File FileName="Assets\Board\SinglePlayer\Normal\TouchInputNm44.cs" Line="64" Column="27" />
+      <File FileName="Assets\Board\SinglePlayer\Norm34\TouchInputNm34.cs" Line="64" Column="27" />
+      <File FileName="Assets\Board\SinglePlayer\Norm23\TouchInputNm33.cs" Line="64" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

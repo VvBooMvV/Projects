@@ -1,0 +1,56 @@
+
+Open Unity > File > Open Project > [Then select one of the following folders below] > Select Folder
+
+==========================
+"MemorySmith - Standalone"
+This version should work on standalone or web device builds.
+When building final Standalone please be sure to only use portrait aspect ratio like 2:3 (1200x800, 640x960 etc.) or 10:16 (1440x900, etc.) as the default resolutions.
+
+==========================
+"MemorySmith - Android"
+This is the final build settings for touchscreen devices.  
+This is the final version for touchscreen builds; I cannot make .apk (Android tablets) or .ipa (iPad) extension file without full version of Unity.
+
+==========================
+"MemorySmith - Test"
+This version will allow you to test the touchscreen using Unity Remote 4.  with an andorid device connected via USB.
+
+Instructions to install Unity Remote 4 (link and copy of instruction below from dcr110 unity forums):
+Source: http://forum.unity3d.com/threads/tutorial-unity-remote-install-and-configuration.187194/
+
+==========================
+Instruction for Unity Remote 4;
+Hi everybody,
+
+Yesterday I was trying to install the Unity Remote and I have a lot of trouble until I get it to work. I get it to work from information from many forums and threads. Besides, in Brazilian play store i saw a lot of people saying the remote didn't work on Unity 4, which is not true, so I decided to write this tutorial to help other people to get it to work on Windows.
+
+1. Install Java jre or jdk. The version must be the same of your OS (32 bits or 64 bits): http://www.oracle.com/technetwork/java/javase/downloads/index.html 
+
+2. Configure Java environment. 
+2.1. Right-click the Computer icon on your desktop and select Properties (Shortcut: Windows+PauseBreak)
+2.2. Select Advanced System Settings
+2.3. Click the Advanced tab.
+2.4. Click the Environment Variables button.
+2.5. Under System Variables, click New.
+2.6. Enter the variable name as "JAVA_HOME" (without quotes) and jre or jdk path as the variable value, for example, C:\Program Files\Java\jre7. (In 64bits OS, make sure to take the java from "Program Files" and not from "Program Files (x86)")
+2.7. Edit the variable "Path" value, adding "%JAVA_HOME%\bin;" (without quotes) at the beginning.
+2.8. Hit "Ok".
+
+3. Install Android SDK from Google. Use the same version of your OS (32 bits or 64 bits): http://developer.android.com/sdk/index.html . After installing, open the eclipse.exe, if it opens without error, everything is ok. 
+
+4. Enable USB debugging in your device.
+
+5. Connect your Android device and install it's drivers. Go to Windows Device Manager (step 2.1 and then Device Manager) and see if the device doesn't have a yellow exclamation. If it has, you have to install the driver. On Windows 64 bits, maybe you have to disable the Windows driver signature. For Windows 8, see this post. For Windows 7, check this one. If you don't have the driver, try the Google one, start the Android SDK Manager and in the extra, check Google USB Driver and hit Install Package. After downloading, you can install following this instructions.
+
+6. Check the device installation through adb. With the device connected, open the command prompt, go to the adb folder (it's the platform-tools folder in SDK folder, the command is "cd path" where "path" is the path to platform-tools) type "adb kill-server" hit enter and then type "adb devices", hit enter. You should see your device under the "List of devices attached". If you don't see any device, you have a problem in your device installation.
+
+7. Configure Unity. Open Unity, go to Edit>Preferences>External Tools and tell Unity where the Android SDK is installed. Close Unity.
+
+8. Execute the Unity Remote. With the Unity closed, connect your device to your computer, start the Unity Remote and then open Unity. When you hit play the game must run in the computer and in your device.
+
+I saw some posts saying that in some cases you will have to run the step 6 every time you start Windows, so, if you have problems, you already know what to do!
+
+-dcr110
+  
+===========================================================
+email: Harrykim4287@gmail.com
